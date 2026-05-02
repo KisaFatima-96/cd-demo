@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cloudflare Demo</title>
+</head>
+<body>
+  <h1>Cloudflare Pages Demo</h1>
+
+  <button onclick="getData()">Click Me</button>
+
+  <script>
+    async function getData() {
+      const res = await fetch("YOUR_WORKER_URL");
+      const text = await res.text();
+      alert(text);
+    }
+  </script>
+</body>
+</html>
